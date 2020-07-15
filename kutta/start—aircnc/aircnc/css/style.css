@@ -1,0 +1,273 @@
+/*
+ * General/Utility Styles
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+  background: rgb(245, 245, 245);
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
+}
+header{
+  background: #fff;
+}
+
+header .logo{
+  border-right:1px solid #DCE0E0; /*gives the boder line and the color*/
+  
+
+}
+
+.dog1 img{
+  width:100%; /*makes the image responsive on laptop and on mobile too*/
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+
+/*
+ * Button styles
+*/
+
+.button {
+  background: rgb(255, 89, 95);
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 2px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*
+*info
+*/
+
+.info{
+  background-color: #fff;
+  text-align:center;/* brings the whole thing in center */
+  padding:40px;
+}
+
+.info .owner-details img{
+ border-radius: 300px;}
+
+.info h2.relationship, h2.name{
+color:#909597;
+}
+
+.info h2.name{
+  font-weight:bold; /* makes the name bold */
+}
+
+
+.info p.location {
+  margin-bottom: 1.25rem; /* 20px / 16px */
+}
+
+.info h1{
+  font-size: 22px;
+  color:#666a6c;
+  margin-bottom:5px;
+}
+
+.info .profile {
+  margin-bottom: 1.5rem; /* 24px / 16px */
+}
+
+.info .icon{
+  float:left;
+  width:33.33%;/* because we have 3 icons so 33.3 would give equal spacing for all the icons*/
+  padding:10px;
+}
+
+.info .icon img {
+  height: 30px;
+  margin-bottom: .1875rem; /* 3px / 16px */
+}
+
+
+.info  .booking h2{
+  font-weight: 400;
+  font-size: 18px;
+  padding:10px;
+}
+
+.info h2.price time {
+  font-size: 1rem; /* 16px / 16px */
+}
+
+
+/*
+ * Details styles
+*/
+
+.details {
+  padding: 1.25rem;
+}
+
+.details h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem 0 1.5rem 0;
+  color: rgb(86, 90, 92);
+}
+
+.details h4 {
+  margin-bottom: 0.625rem;
+}
+
+.details li {
+  margin-bottom: 0.3125rem;
+}
+
+.details section {
+  border-bottom: 1px solid rgb(220, 224, 224);
+  padding: 1rem 0 1.25rem 0;
+}
+
+.details .about {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  text-align: center;
+}
+
+.details .about p {
+  text-align: left;
+}
+
+.details .about a.contact {
+  margin: 0.9375rem 0; /* 15px / 16px */
+  display: block;
+}
+
+.details .photos img {
+  width: 100%;
+  display: block;
+  margin-bottom: .5rem;
+}
+
+
+@media only screen and (min-width: 1060px) /*this is given for media query to get version of mobile into laptop version,basically whatever we write inside this will work only after 1080px*/{
+
+
+ .container{
+  width:1040px;
+  margin:0 auto; /* brings the whole container to the centre*/
+ }
+
+ .column{
+  float:left;
+  }
+
+.button{
+  width:275px;
+  margin:auto;
+}
+
+.info h1{
+  margin-bottom:11px;
+}
+
+.info h2{
+  margin-bottom: 3px;
+}
+
+ .info .profile{
+  width:660px;
+ }
+
+ .info .booking{
+  width:380px;
+ }
+ 
+ .info .owner-details{
+  width:20%;
+ }
+
+ .info .pet-details{
+  width:80%;
+  text-align:left;
+ }
+
+ .info .pet-details .icon {
+ width: inherit;
+ margin-right: 50px;
+ }
+
+ .info .pet-details .icon img {
+ display: block;
+ margin: 3px auto 3px;
+ }
+
+
+
+
+ /*
+   * .details styles
+  */
+
+  .details .main {
+    width: 690px;
+  }
+
+  .details h4 {
+    width: 46px;
+  }
+
+  .details .about {
+    text-align: left;
+  }
+
+  .details .care .column, .details .games .column {
+    margin-right: 5.9rem;
+  }
+
+  .details .games li img {
+    padding-right: 0.5rem;
+  }
+
+  /*
+   * photo styles
+  */
+
+  .details .photos {
+    text-align: center;
+  }
+
+  .details .photos img {
+    display: inline;
+    width: 200px;
+    margin: 0 0.85rem;
+  }
+
+  
+}
+
+
+
+
